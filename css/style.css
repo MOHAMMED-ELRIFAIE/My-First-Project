@@ -1,0 +1,454 @@
+/* ==========Start Global Rules========== */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: Merriweather, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+ font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-colo: #212529;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a {
+  text-decoration: none;
+ font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 0.9rem;
+     color: #212529;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 500;
+    line-height: 1.2;}
+
+.title {
+    display: flex;
+    justify-content: center;
+    color: #212529;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 20px;
+    
+       margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.title + hr.divider {
+    height: 0.2rem;
+    max-width: 3.25rem;
+    margin: 1rem auto;
+    background-color: #f4623a;
+    opacity: 1;
+   margin-bottom: 80px;
+    border: 0;
+}
+
+hr.divider {
+    height: 0.2rem;
+    max-width: 3.25rem;
+    margin: 1rem auto;
+    background-color: #f4623a;
+    opacity: 1;
+
+    border: 0;
+}
+
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+
+/* ==========End Global Rules========== */
+
+
+
+
+
+       /*=========== Start header Section============ */
+header {
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 120px ;
+   
+   box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+    background-color: #fff;
+}
+
+.logo{
+    text-decoration: none;
+     color: #212529;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.navigation a{
+     color: #212529;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navigation a:hover{
+    color: #f4623a;
+}
+ .logo:hover{
+    color: #f4623a;
+}
+
+/* ==============End header Section=========== */
+
+
+
+
+/* ==============Start Landing Section=========== */
+.landing {
+  background-image: linear-gradient(rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(../img/bg-masthead.jpg);ad.jpg);
+  background-size: cover;
+  height: calc(100vh);
+  position: relative;
+}
+.landing .intro-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  max-width: 100%;
+}
+.landing .intro-text h1 {
+  margin: 0;
+  font-size: 50px;
+  color: #ffffff;
+}
+.landing .intro-text p {
+  font-size: 19px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.main-btn {
+    color: #fff;
+    background-color: #f4623a;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    margin: 30px;
+    text-transform: uppercase;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover {
+    background-color: #f4623c;
+    transform: scale(1.1);
+}
+
+
+/* ============ End Landing Section======== */
+
+
+
+/*=========== Start Services ==========*/
+.services {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #ffffff;
+}
+.services .container {
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 10px;
+}
+.services .feat {
+  padding: 0 30px;
+  text-align: center;
+}
+.services .feat i {
+  color: #f4623a ;
+  font-size: 50px;
+  
+}
+.services .feat h3 {
+  font-weight: 800;
+      margin-top: 30px;
+}
+.services .feat p {
+  line-height: 1.8;
+  color: #6c757d !important;
+  font-size: 1rem;
+}
+/* =============End Services =============*/
+
+
+
+
+/* ============Start Projects ============== */
+.projects {
+  padding-top:100px;
+
+  padding-bottom: 100px;
+  position: relative;
+  background: #EDDFDE;
+}
+.projects .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+.projects .box {
+  box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+  background-color: white;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.3s ease , box-shadow 0.3s ease;
+}
+.projects .box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+}
+.projects .box img {
+  width: 100%;
+  max-width: 100%;
+}
+.projects .box .content {
+  padding: 20px;
+}
+.projects .box .content h3 {
+  margin: 0;
+}
+.projects .box .content p {
+  margin: 10px 0 0;
+  line-height: 1.5;
+  color: #777;
+  padding-bottom: 20px;
+}
+.projects .box .info {
+  padding: 20px;
+  border-top: 1px solid #e6e6e7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.projects .box .info a {
+  color: color: #f4623a;
+  font-weight: bold;
+}
+.projects .box .info i {
+  color: color: #f4623a;
+}
+.projects .box:hover .info i {
+  animation: moving-arrow 0.6s linear infinite;
+}
+/* =============End Projects=========== */
+
+
+
+/* ===========Start section ======== */
+section .ab{
+position: relative;
+height: 40vh;
+background-color:#333333;
+}
+
+.ab .intro-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+ color: rgba(255, 255, 255, 0.75) !important;
+}
+
+
+
+/* =============End section=========== */
+
+
+
+
+
+/* ===========Start Gallery======== */
+.gallery {
+  padding-top: 100px ;
+  padding-bottom: 300px ;
+  position: relative;
+  background-color: #EDDFDE;
+}
+.gallery .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+.gallery .box {
+  padding: 15px;
+  background-color: white;
+  box-shadow: 0px 12px 20px 0px rgb(0 0 0 / 13%), 0px 2px 4px 0px rgb(0 0 0 / 12%);
+}
+.gallery .box .image {
+  position: relative;
+  overflow: hidden;
+}
+.gallery .box .image::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255 255 255 / 20%);
+  width: 0;
+  height: 0;
+  opacity: 0;
+  z-index: 2;
+}
+.gallery .box .image:hover::before {
+  animation: flashing 0.7s;
+}
+.gallery .box img {
+  max-width: 100%;
+  transition: 0.3s ease;
+}
+.gallery .box .image:hover img {
+  transform: rotate(5deg) scale(1.15);
+ 
+}
+/* ========End Gallery ==========*/
+
+
+/*========= Start Footer========= */
+
+footer {
+
+width: 100%;
+height: 25vh;
+background:#333333 ;
+text-align: center;
+position: relative;
+color: white;
+}
+
+footer p {
+        position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+   font-weight: 800;
+}
+
+footer div {
+        position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
+
+footer div a {
+       font-size: 1.3em;
+padding-right: 5px;
+color: white;
+}
+
+footer a:hover{
+    color: #EDDFDE;
+}
+ /* =============End Footer========== */
+
+
+
+
+
+
+
+
+
+
+/* ========Start Animation =========*/
+
+@keyframes flashing {
+  0%,
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 200%;
+    height: 200%;
+  }
+}
+
+/* ==========End Animation ========*/
+
+
+
+
+
+
+
+
+
+
+
+
